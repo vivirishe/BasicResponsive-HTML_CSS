@@ -17,6 +17,8 @@ body {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  /*trick so the hover grabs the whole block*/
+  font-size: 0px;
 }
 
 .nav ul li {
@@ -70,4 +72,21 @@ body {
 
 .single-service p {
   padding: 0px 16px;
+}
+
+@media screen and (min-width: 700px) {
+  .nav ul {
+    text-align: right;
+  }
+  .nav ul li {
+    display: inline-block;
+    border-bottom: 0px;
+    border-left: 1px solid black;
+    text-align: left;
+  }
+
+  .single-service {
+    width: 50%;
+    float: left;
+  }
 }
